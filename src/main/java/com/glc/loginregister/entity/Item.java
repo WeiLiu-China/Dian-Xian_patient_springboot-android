@@ -1,5 +1,8 @@
 package com.glc.loginregister.entity;
 
+import lombok.Data;
+
+@Data
 public class Item {
     private Integer id;
     private String book_name;
@@ -8,6 +11,43 @@ public class Item {
     private String book_info;
     private String book_download;
     private String book_FileSize;
+
+    private String age;
+    private String coordinate;
+    private String time;
+    private String bloodType;
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getCoordinate() {
+        return coordinate;
+    }
+
+    public void setCoordinate(String coordinate) {
+        this.coordinate = coordinate;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getBloodType() {
+        return bloodType;
+    }
+
+    public void setBloodType(String bloodType) {
+        this.bloodType = bloodType;
+    }
 
     public Integer getId() {
         return id;
@@ -65,7 +105,7 @@ public class Item {
         this.book_FileSize = book_FileSize;
     }
 
-    @Override
+   /* @Override
     public String toString() {
         return "Item{" +
                 "id=" + id +
@@ -76,5 +116,6 @@ public class Item {
                 ", book_download='" + book_download + '\'' +
                 ", book_FileSize='" + book_FileSize + '\'' +
                 '}';
-    }
+    }*/
+
 }

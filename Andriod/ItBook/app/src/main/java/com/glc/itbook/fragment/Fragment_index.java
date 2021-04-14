@@ -191,7 +191,7 @@ public class Fragment_index extends Fragment {
                         name.setText("癫痫病人名字:"+book.getItems().get(i).getBook_name());
                         user.setText("状态:"+book.getItems().get(i).getBook_author());
                         user.setTextColor(0xff00ff00);
-                        info.setText("简介:"+book.getItems().get(i).getBook_info());
+                       /* info.setText("简介:"+book.getItems().get(i).getBook_info());*/
 
                         mlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override

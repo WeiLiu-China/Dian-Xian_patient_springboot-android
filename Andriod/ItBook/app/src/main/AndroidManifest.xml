@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.glc.itbook">
+          package="com.glc.itbook">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/book"
-        android:label="癫痫助手"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".BanBenActivity"></activity>
-        <activity android:name=".UpdateItemActivity" />
-        <activity android:name=".UpdateActity" />
-        <activity android:name=".AddActivity" />
-        <activity android:name=".XiangQingActivity" />
-        <activity android:name=".MenuActivity"></activity> <!-- 9.0闪退 -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
+            android:allowBackup="true"
+            android:icon="@mipmap/book"
+            android:label="守护大脑"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:usesCleartextTraffic="true">
 
-        <activity android:name=".RegistActivity" />
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="RpqSDLWqTXxxfr5K07rLhKYN36EnihDm" >
+        </meta-data>
+
+        <activity android:name=".BanBenActivity"></activity>
+        <activity android:name=".UpdateItemActivity"/>
+        <activity android:name=".UpdateActity"/>
+        <activity android:name=".AddActivity"/>
+        <activity android:name=".XiangQingActivity"/>
+        <activity android:name=".MenuActivity"></activity> <!--TODO 9.0闪退 -->
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false"/>
+
+        <activity android:name=".RegistActivity"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>

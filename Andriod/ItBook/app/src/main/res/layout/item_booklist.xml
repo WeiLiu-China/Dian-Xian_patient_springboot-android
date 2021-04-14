@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
+                    <!--<TextView
                         android:id="@+id/item_bookInfo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -57,7 +57,7 @@
                         android:ellipsize="end"
                         android:maxLines="6"
                         android:text="dddddddddddddddddddddddddddddddddddddddddo"
-                        android:textSize="18sp" />
+                        android:textSize="18sp" />-->
 
                     <TextView
                         android:id="@+id/item_bookDown"
