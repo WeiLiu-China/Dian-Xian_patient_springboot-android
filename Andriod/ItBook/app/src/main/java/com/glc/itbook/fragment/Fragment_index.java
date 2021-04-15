@@ -153,7 +153,7 @@ public class Fragment_index extends Fragment {
     //分页搜索显示的数据 -- 默认显示全部
     private void selectFenYe(String name,int page){
         JSONObject jsonObject = new JSONObject();
-        String url = "http://192.168.116.9:8085/item/findByPageName?name="+name+"&currentPage="+page+"&pageSize=10";
+        String url = "https://www.hautlw.xin/itbook-1.0/item/findByPageName?name="+name+"&currentPage="+page+"&pageSize=10";
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, jsonObject, new Response.Listener<JSONObject>() {
             @Override
