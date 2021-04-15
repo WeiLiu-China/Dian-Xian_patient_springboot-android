@@ -9,8 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.glc</groupId>
-    <artifactId>login-register</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>itbook</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
     <name>Dian-Xian_patient_springboot-android</name>
     <description>Demo project for Spring Boot</description>
 
@@ -21,11 +22,22 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -72,15 +84,21 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <!-- <build>
+         <plugins>
+             <plugin>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
+             </plugin>
+         </plugins>
+     </build>-->
 
 </project>

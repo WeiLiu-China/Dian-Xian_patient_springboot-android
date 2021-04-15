@@ -57,6 +57,7 @@
                 android:value="RpqSDLWqTXxxfr5K07rLhKYN36EnihDm"></meta-data>
 
         <activity android:name=".BanBenActivity"></activity>
+        <activity android:name=".CheckPermissionsActivity" />
         <activity android:name=".UpdateItemActivity" />
         <activity android:name=".UpdateActity" />
         <activity android:name=".AddActivity" />
